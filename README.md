@@ -5,4 +5,4 @@ Technologies used :
 - HTML
 - CSS (flexbox)
 
-Live Demo : 
+Live Demo : https://jgamix7.github.io/nft-card-component/
