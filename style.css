@@ -1,26 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
-
-
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: hsl(217, 54%, 11%);
   font-family: 'Outfit', sans-serif;
   font-size: 18px;
 }
 
-a{text-decoration: none;}
+a {text-decoration: none;}
 
-p{font-weight: 300;}
+p {font-weight: 300;}
 
-hr{border: 1px solid hsl(215, 32%, 27%);}
+hr {border: 1px solid hsl(215, 32%, 27%);}
 
-.container{
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +26,7 @@ hr{border: 1px solid hsl(215, 32%, 27%);}
   flex-wrap: wrap;
 }
 
-.card{
+.card {
   max-width: 300px;
   margin: 10px 20px;
   padding: 20px;
@@ -40,14 +38,14 @@ hr{border: 1px solid hsl(215, 32%, 27%);}
 }
 
 /* Card image */
-.card .card-product-img{
+.card .card-product-img {
   position: relative;
   border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
   transition: .4s ease;
 }
-.card .card-product-img::after{
+.card .card-product-img::after {
   content: url(images/icon-view.svg);
   background: hsla(178, 100%, 50%, 0.5);
   position: absolute;
@@ -58,55 +56,55 @@ hr{border: 1px solid hsl(215, 32%, 27%);}
   opacity: 0;
   transition: all 0.3s ease;
 }
-.card .card-product-img:hover::after{opacity: 1;}
+.card .card-product-img:hover::after {opacity: 1;}
 
-.card .card-product-img img{
+.card .card-product-img img {
   width: 100%;
   display: block;
 }
 
 /* Card Content */
-.card .card-content{
+.card .card-content {
   margin: 10px 0;
 }
 
-.card .card-content .card-title{
+.card .card-content .card-title {
   color: hsl(0, 0%, 100%);
   transition: .4s ease;
   cursor: pointer;
 }
-.card .card-content .card-title:hover{
+.card .card-content .card-title:hover {
   color: hsl(178, 100%, 50%);
 }
 
-.card .card-content .card-description{
+.card .card-content .card-description {
   margin: 10px 0;
   color: hsl(215, 51%, 70%);
 }
 
-.card .card-content .card-details{
+.card .card-content .card-details {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
 }
 
 .card .card-content .card-details .card-nft-price,
-.card  .card-details .card-nft-daysleft{
+.card  .card-details .card-nft-daysleft {
   display: flex;
   align-items: center;
   gap: 5px;
   font-weight: 400;
 }
 
-.card .card-content .card-details .card-nft-price{
+.card .card-content .card-details .card-nft-price {
   color: hsl(178, 100%, 50%);
 }
 
-.card .card-content .card-details .card-nft-daysleft{
+.card .card-content .card-details .card-nft-daysleft {
   color: hsl(215, 51%, 70%);
 }
 
-.card .card-content .card-author{
+.card .card-content .card-author {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,23 +112,23 @@ hr{border: 1px solid hsl(215, 32%, 27%);}
   margin: 15px 0 0;
 }
 
-.card .card-content .card-author img{
+.card .card-content .card-author img {
   height: 40px;
   border: 2px solid hsl(0, 0%, 100%);
   border-radius: 50%;
 }
 
-.card .card-content .card-author-text{
+.card .card-content .card-author-text {
   color: hsl(215, 51%, 70%);
 }
 
-.card .card-content .card-author-text-modified{
+.card .card-content .card-author-text-modified {
   color: hsl(0, 0%, 100%);
   font-weight: 400;
   transition: .4s ease;
   cursor: pointer;
 }
-.card .card-content .card-author-text-modified:hover{
+.card .card-content .card-author-text-modified:hover {
   color:  hsl(178, 100%, 50%);
 }
 
@@ -140,11 +138,11 @@ hr{border: 1px solid hsl(215, 32%, 27%);}
     min-width: 280px;
   }
 
-  .card .card-content .card-title{
+  .card .card-content .card-title {
     font-size: 20px;
   }
 
-  p{
+  p {
     font-size: 16px;
   }
 }
